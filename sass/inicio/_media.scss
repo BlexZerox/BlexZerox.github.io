@@ -1,0 +1,117 @@
+@media screen and (max-width: 1020px) {
+  
+  .contenedor{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "img"
+      "footer";
+  }
+  main {
+    grid-area: main;
+  }
+  header{
+    grid-area: header;
+  }
+  img {
+    grid-area: img;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .header {
+    padding: 1vw;
+    align-self: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(34, 40, 49);
+    .headerTitulo{
+      font-size: 10vw;
+      align-self: center;
+    }
+    .headerNav{
+      .headerNavUl{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        .headerNavUlLi{
+          .headerNavUlLiA {
+            align-self: center;
+            display: flex;
+            color: rgb(238, 238, 238);
+            text-decoration: none;
+            font-size: 4vw;
+            font-weight: 100;
+            border-bottom: rgb(238, 238, 238) 0.1rem solid;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            -webkit-animation: nav 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: nav 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          }
+          .active {
+            color: rgb(0, 173, 181);
+            font-weight: bold;
+            border-bottom: rgb(0, 173, 181) 0.1rem solid;
+          }
+        }
+      }
+    }
+  }
+
+  .main{
+    .mainTitulo {
+      display: flex;
+      font-size:10vw;
+      align-self: center;
+      font-weight: 900;
+      -webkit-animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+    .mainSubtitulo {
+      font-weight: 300;
+      align-self: center;
+      font-size: 7vw;
+      -webkit-animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+    .mainParrafo{
+      font-weight: 300;
+      font-size: 4vw;
+      align-self: center;
+    }
+  }
+  .imagen {
+    display: flex;
+    max-height:100vw;
+    align-self: center;
+  }
+  .footer{
+    display: flex;
+    justify-content:center;
+    background-color: rgb(34, 40, 49);
+    padding: 0.5rem;
+    .footerUl{
+      display: flex;
+      gap: 8vw;
+      .footerUlLi{
+        .footerUlLiA{
+          .footerUlLiAImg{
+            display: flex;
+            height: 5vw;
+            -webkit-animation: logo 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: logo 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation-iteration-count: infinite;
+          }
+        }
+      }
+    }
+  } 
+  .imagencss{
+    height: 20vh;
+  }
+}

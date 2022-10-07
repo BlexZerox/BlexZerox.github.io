@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+@keyframes titulo {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes subtitulo {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes nav {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes navhover {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+
+@keyframes logo {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: sca le(1); } }
+
+.header {
+  background-color: #222831;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .header .headerTitulo {
+    display: flex;
+    align-self: center;
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase; }
+  .header .headerNav {
+    display: flex;
+    align-self: center; }
+    .header .headerNav .headerNavUl {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 2rem;
+      flex-wrap: wrap; }
+      .header .headerNav .headerNavUl .headerNavUlLi {
+        display: flex; }
+        .header .headerNav .headerNavUl .headerNavUlLi .headerNavUlLiA {
+          display: flex;
+          color: #eeeeee;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: 100;
+          border-bottom: #eeeeee 0.1rem solid;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+          -webkit-animation: nav 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: nav 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+          .header .headerNav .headerNavUl .headerNavUlLi .headerNavUlLiA:hover {
+            color: #00adb5;
+            border-bottom: #00adb5 0.1rem solid;
+            -webkit-animation: navhover 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: navhover 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+        .header .headerNav .headerNavUl .headerNavUlLi .active {
+          color: #00adb5;
+          font-weight: bold;
+          border-bottom: #00adb5 0.1rem solid; }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem; }
+  .main .mainTitulo {
+    display: flex;
+    font-size: 3rem;
+    align-self: center;
+    font-weight: 900;
+    -webkit-animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+  .main .mainSubtitulo {
+    font-weight: 300;
+    font-size: 1.5rem;
+    -webkit-animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+  .main .mainParrafo {
+    font-weight: 300;
+    font-size: 1rem; }
+
+.contenedor {
+  display: grid;
+  grid-template-rows: 10fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header header" "main img" "footer footer"; }
+
+main {
+  grid-area: main; }
+
+header {
+  grid-area: header; }
+
+img {
+  grid-area: img; }
+
+footer {
+  grid-area: footer; }
+
+.imagen {
+  display: flex;
+  max-height: 48rem;
+  align-self: center; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #222831;
+  padding: 0.5rem; }
+  .footer .footerUl {
+    display: flex;
+    gap: 8rem; }
+    .footer .footerUl .footerUlLi {
+      display: flex; }
+      .footer .footerUl .footerUlLi .footerUlLiA {
+        display: flex; }
+        .footer .footerUl .footerUlLi .footerUlLiA .footerUlLiAImg {
+          display: flex;
+          height: 2rem;
+          -webkit-animation: logo 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: logo 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation-iteration-count: infinite; }
+
+@media screen and (max-width: 1020px) {
+  .contenedor {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "img" "footer"; }
+  main {
+    grid-area: main; }
+  header {
+    grid-area: header; }
+  img {
+    grid-area: img; }
+  footer {
+    grid-area: footer; }
+  .header {
+    padding: 1vw;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222831; }
+    .header .headerTitulo {
+      font-size: 10vw;
+      align-self: center; }
+    .header .headerNav .headerNavUl {
+      display: flex;
+      flex-direction: column;
+      list-style: none; }
+      .header .headerNav .headerNavUl .headerNavUlLi .headerNavUlLiA {
+        align-self: center;
+        display: flex;
+        color: #eeeeee;
+        text-decoration: none;
+        font-size: 4vw;
+        font-weight: 100;
+        border-bottom: #eeeeee 0.1rem solid;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        -webkit-animation: nav 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: nav 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+      .header .headerNav .headerNavUl .headerNavUlLi .active {
+        color: #00adb5;
+        font-weight: bold;
+        border-bottom: #00adb5 0.1rem solid; }
+  .main .mainTitulo {
+    display: flex;
+    font-size: 10vw;
+    align-self: center;
+    font-weight: 900;
+    -webkit-animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+  .main .mainSubtitulo {
+    font-weight: 300;
+    align-self: center;
+    font-size: 7vw;
+    -webkit-animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+  .main .mainParrafo {
+    font-weight: 300;
+    font-size: 4vw;
+    align-self: center; }
+  .imagen {
+    display: flex;
+    max-height: 100vw;
+    align-self: center; }
+  .footer {
+    display: flex;
+    justify-content: center;
+    background-color: #222831;
+    padding: 0.5rem; }
+    .footer .footerUl {
+      display: flex;
+      gap: 8vw; }
+      .footer .footerUl .footerUlLi .footerUlLiA .footerUlLiAImg {
+        display: flex;
+        height: 5vw;
+        -webkit-animation: logo 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: logo 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation-iteration-count: infinite; }
+  .imagencss {
+    height: 20vh; } }

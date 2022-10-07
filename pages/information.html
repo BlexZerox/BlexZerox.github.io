@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bs -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <header class="header">
+        <h1 class="headerTitulo">Mi Portafolio</h1>
+        <nav class="headerNav">
+          <ul class="headerNavUl">
+            <!--Inicio-->
+            <li class="headerNavUlLi">
+              <a
+                class="headerNavUlLiA"
+                href="../index.html"
+              >
+                Inicio
+              </a>
+            </li>
+            <!--Información-->
+            <li class="headerNavUlLi">
+              <a 
+                class="headerNavUlLiA active"
+                href="information.html"
+              >
+                Información
+              </a>
+            </li>
+            <!--Proyectos-->
+            <li class="headerNavUlLi">
+              <a
+                class="headerNavUlLiA"
+                href="proyects.html"
+              >
+                Proyectos
+              </a>
+            </li>
+            <!--Experiencia-->
+            <li class="headerNavUlLi">
+              <a
+                class="headerNavUlLiA"
+                href="experience.html"
+              >
+                Experiencia
+              </a>
+            </li>
+            <!--Contacto-->
+            <li class="headerNavUlLi">
+              <a
+                class="headerNavUlLiA"
+                href="contact.html"
+              >
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--Main-->
+      <main class="main">
+        <h2 class="mainTitulo">Informacíon</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="imagencss" src="../image/tuki.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img class="imagencss" src="../image/css.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img class="imagencss" src="../image/html.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <h3 class="mainSubtitulo">Desarrollador Web</h3>
+        <p class="mainParrafo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          nisi earum repudiandae assumenda doloribus magni quam officia,
+          consequatur eveniet tempora doloremque laborum, dolor ab maxime
+          numquam laboriosam, blanditiis voluptates iusto.
+        </p>
+      </main>
+      <!--Imagen-->
+      <img class="imagen" src="../image/1663374337744.png" alt="" />
+      <!--Footer-->
+      <footer class="footer">
+        <ul class="footerUl">
+          <!--Facebook-->
+          <li class="footerUlLi">
+            <a class="footerUlLiA" href="https://www.facebook.com" target="_blank">
+              <img
+                class="footerUlLiAImg"
+                src="../image/facebook-logo.png"
+                alt="Facebook"
+                title="Facebook"
+              />
+            </a>
+          </li>
+          <!--YouTube-->
+          <li class="footerUlLi">
+            <a
+              class="footerUlLiA"
+              href="https://www.youtube.com"
+              target="_blank"
+            >
+              <img
+                class="footerUlLiAImg"
+                src="../image/youtube-logo.png"
+                alt="YouTube"
+                title="YouTube"
+              />
+            </a>
+          </li>
+          <!--Instagram-->
+          <li class="footerUlLi">
+            <a
+              class="footerUlLiA"
+              href="https://www.instagram.com"
+              target="_blank"
+            >
+              <img
+                class="footerUlLiAImg"
+                src="../image/instagram-logo.png"
+                alt="Instagram"
+                title="Instagram"
+              />
+            </a>
+          </li>
+          <!--WhatsApp-->
+          <li class="footerUlLi">
+            <a 
+              class="footerUlLiA"
+              href="https://whatsapp.com"
+              target="_blank"
+            >
+              <img
+                class="footerUlLiAImg"
+                src="../image/wsp-logo.png"
+                alt="WhatsApp"
+                title="WhatsApp"
+              />
+            </a>
+          </li>
+          <!--Telegram-->
+          <li class="footerUlLi">
+            <a
+              class="footerUlLiA"
+              href="https://telegram.com"
+              target="_blank"
+            >
+              <img
+                class="footerUlLiAImg"
+                src="../image/telegram.png"
+                alt="Telegram"
+                title="Telegram"
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <!-- JavaScript Bundle with Popper -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>

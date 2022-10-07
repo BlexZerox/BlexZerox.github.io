@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    justify-content:center;
+    background-color: rgb(34, 40, 49);
+    padding: 0.5rem;
+    .footerUl{
+        display: flex;
+        gap: 8rem;
+        .footerUlLi{
+            display: flex;
+            .footerUlLiA{
+                display: flex;
+                .footerUlLiAImg{
+                    display: flex;
+                    height: 2rem;
+                    -webkit-animation: logo 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                    animation: logo 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.contenedor {
+    display: grid;
+    grid-template-rows: 10fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main img"
+      "footer footer";
+  }
+  main {
+    grid-area: main;
+  }
+  header{
+    grid-area: header;
+  }
+  img {
+    grid-area: img;
+  }
+  footer {
+    grid-area: footer;
+  }

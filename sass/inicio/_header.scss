@@ -1,0 +1,56 @@
+@import"../utilities/utilidades";
+@import "../utilities/animaciones";
+
+.header{
+    background-color: $color-secundario;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .headerTitulo{
+        display: flex;
+        align-self: center;
+        color: $color-principal;
+        font-weight: bold;
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+    .headerNav{
+        display: flex;
+        align-self:center;
+        .headerNavUl{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+            .headerNavUlLi{
+                display: flex;
+                .headerNavUlLiA{
+                    display: flex;
+                    color: $color-principal;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-weight: 100;
+                    border-bottom: rgb(238, 238, 238) 0.1rem solid;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2rem;
+                    -webkit-animation: nav 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                    animation: nav 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                    &:hover{
+                        color: $color-terciario;
+                        border-bottom: $borde;
+                        -webkit-animation: navhover 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                        animation: navhover 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                    }
+                }
+                .active{
+                    color: $color-terciario;
+                    font-weight: bold;
+                    border-bottom: $borde;
+                }
+            }
+        }
+    }
+}

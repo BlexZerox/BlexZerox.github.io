@@ -1,7 +1,8 @@
-@import "inicio/reset";
-@import "inicio/header";
-@import "inicio/main";
-@import "inicio/grid";
-@import "inicio/img";
-@import "inicio/footer";
-@import "inicio/media";
+@import "general/reset";
+@import "general/header";
+@import "general/footer";
+/*Index*/
+@import "index/main";
+@import "index/grid";
+@import "index/img";
+@import "index/media";

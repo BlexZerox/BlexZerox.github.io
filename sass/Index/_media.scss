@@ -1,6 +1,6 @@
 @media screen and (max-width: 1020px) {
   
-  .contenedor{
+  .contenedorindex{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -63,8 +63,8 @@
     }
   }
 
-  .main{
-    .mainTitulo {
+  .mainindex{
+    .mainTituloindex {
       display: flex;
       font-size:10vw;
       align-self: center;
@@ -72,20 +72,20 @@
       -webkit-animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
       animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     }
-    .mainSubtitulo {
+    .mainSubtituloindex {
       font-weight: 300;
       align-self: center;
       font-size: 7vw;
       -webkit-animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
       animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     }
-    .mainParrafo{
+    .mainParrafoindex{
       font-weight: 300;
       font-size: 4vw;
       align-self: center;
     }
   }
-  .imagen {
+  .imagenindex {
     display: flex;
     max-height:100vw;
     align-self: center;
@@ -111,7 +111,4 @@
       }
     }
   } 
-  .imagencss{
-    height: 20vh;
-  }
 }

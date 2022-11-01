@@ -1,0 +1,26 @@
+.mainproy{
+  .mainTituloproy{
+    .mainContenedorproy {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "header header header header"
+        "h2 h2 h2 h2"
+        "proy proy proy proy"
+        "footer footer";
+      }
+      .mainTituloproy {
+        grid-area: h2;
+      }
+      header{
+        grid-area: header;
+      }
+      .mainproy {
+        grid-area: proy;
+      }
+      footer {
+        grid-area: footer;
+      }
+  }
+}

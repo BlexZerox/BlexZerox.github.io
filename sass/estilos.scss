@@ -2,7 +2,15 @@
 @import "general/header";
 @import "general/footer";
 /*Index*/
-@import "index/main";
-@import "index/grid";
-@import "index/img";
-@import "index/media";
+@import "index/mainindex";
+@import "index/gridindex";
+@import "index/imgindex";
+@import "index/mediaindex";
+/*Information*/
+@import "information/gridinfo";
+@import "information/imginfo";
+@import "information/maininfo";
+@import "information/mediainfo";
+/*Proyects*/
+@import "proyects/gridproy";
+@import "proyects/mainproy";

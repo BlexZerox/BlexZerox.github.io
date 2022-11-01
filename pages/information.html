@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <meta name="description" content="Se encuentra información personal">
+    <meta name="keywords" content="Desarrollador Web, Portafolio">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +25,7 @@
   </head>
 
   <body>
-    <div class="contenedor">
+    <div class="contenedorinfo">
       <header class="header">
         <h1 class="headerTitulo">Mi Portafolio</h1>
         <nav class="headerNav">
@@ -77,44 +79,45 @@
         </nav>
       </header>
       <!--Main-->
-      <main class="main">
-        <h2 class="mainTitulo">Informacíon</h2>
-        <div id="carouselExampleIndicators" class="carousel slide carrusel" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner carruselContenedor">
-            <div class="carousel-item active carruselContenedorItems">
-              <img src="../image/tuki.jpg" class="d-block" alt="..." id="carruselContenedorItemsImagenes" style="display:flex; max-height: 48rem; align-self: center;">
-            </div>
-            <div class="carousel-item carruselesitems">
-              <img src="../image/css.png" class="d-block" alt="..." id="carruselContenedorItemsImagenes">
-            </div>
-            <div class="carousel-item carruselesitems" >
-              <img src="../image/html.jpg" class="d-block" alt="..." id="carruselContenedorItemsImagenes">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <h3 class="mainSubtitulo">Desarrollador Web</h3>
-        <p class="mainParrafo">
+      <main class="maininfo">
+        <h2 class="mainTituloinfo">Informacíon</h2>
+        <p class="mainParrafoinfo">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
           nisi earum repudiandae assumenda doloribus magni quam officia,
           consequatur eveniet tempora doloremque laborum, dolor ab maxime
           numquam laboriosam, blanditiis voluptates iusto.
         </p>
+        <h3 class="mainSubtituloinfo">Habilidades</h3>
+        <div id="carouselExampleControls" class="carousel slide mainCarrusel" data-bs-ride="carousel">
+          <div class="carousel-inner mainCarruselContenedor">
+            <div class="carousel-item active mainCarruselContenedorItems" data-bs-interval="2500">
+              <img src="../image/css.png" class="d-block mainCarruselContenedorItemsImg" alt="CSS 3">
+            </div>
+            <div class="carousel-item mainCarruselContenedorItems" data-bs-interval="2500">
+              <img src="../image/html.png" class="d-block mainCarruselContenedorItemsImg" alt="HTML 5">
+            </div>
+            <div class="carousel-item mainCarruselContenedorItems" data-bs-interval="2500">
+              <img src="../image/sass.png" class="d-block mainCarruselContenedorItemsImg" alt="SASS">
+            </div>
+            <div class="carousel-item mainCarruselContenedorItems" data-bs-interval="2500">
+              <img src="../image/git.png" class="d-block mainCarruselContenedorItemsImg" alt="GIT">
+            </div>
+            <div class="carousel-item mainCarruselContenedorItems" data-bs-interval="2500">
+              <img src="../image/github.png" class="d-block mainCarruselContenedorItemsImg" alt="GITHUB">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </main>
       <!--Imagen-->
-      <img class="imagen" src="../image/1663374337744.png" alt="" />
+      <img class="imageninfo" src="../image/1663374337744.png" alt="Yo" />
       <!--Footer-->
       <footer class="footer">
         <ul class="footerUl">

@@ -1,6 +1,6 @@
 @media screen and (max-width: 1020px) {
   
-  .contenedorindex{
+  .contenedorinfo{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -63,35 +63,31 @@
     }
   }
 
-  .mainindex{
-    .mainTituloindex {
+  .maininfo{
+    .mainTituloinfo{
       display: flex;
       font-size:10vw;
       align-self: center;
       font-weight: 900;
       -webkit-animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
       animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-      .mainTituloSpanindex{
-        display: block;
-      }
     }
-    .mainSubtituloindex {
+    .mainSubtituloinfo{
       font-weight: 300;
       align-self: center;
       font-size: 7vw;
       -webkit-animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
       animation: subtitulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      border-bottom: $color-terciario 0.15rem solid;
     }
-    .mainParrafoindex{
+    .mainParrafoinfo{
       font-weight: 300;
       font-size: 4vw;
       align-self: center;
     }
   }
-  .imagenindex {
-    display: flex;
-    max-height:100vw;
-    align-self: center;
+  .imageninfo{
+    display: none;
   }
   .footer{
     display: flex;

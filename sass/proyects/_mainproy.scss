@@ -1,0 +1,22 @@
+.mainproy{
+    display:block;
+    .mainTituloproy{
+        display: block;
+        font-size: 3rem;
+        align-self: center;
+        font-weight: 900;
+        -webkit-animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: titulo 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        text-shadow: 0px 0px 5px $color-terciario;  
+        text-align: center;
+    }
+    .mainContenedorproy{
+        display: inline-block;
+        margin:3rem;
+        .mainContenedorImgproy{
+            display: flex;
+            width: 37.2vh;
+            
+        }
+    }
+}
